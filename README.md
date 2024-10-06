@@ -1,24 +1,17 @@
-# README
+# 掲示板アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+dockerが入っていることが前提だが、以下のコマンドで起動、終了を行う。
+- `make up`: アプリの起動
 
-Things you may want to cover:
+- `make create_db`: dbの作成
 
-* Ruby version
+- `make migrate_db`: dbのマイグレート
 
-* System dependencies
+- `make down`: アプリの終了
 
-* Configuration
 
-* Database creation
+起動して、dbのマイグレートまで行うと、以下のurlにアクセスでき、掲示板が使える。
 
-* Database initialization
+**[http://localhost:3000/posts](http://localhost:3000/posts)**
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
