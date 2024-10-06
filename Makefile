@@ -9,3 +9,8 @@ build:
 
 restart:
 	docker-compose restart
+
+db_make:
+	docker-compose exec web db:create
+	sleep 2
+	docker-compose exec web db:migrate
