@@ -3,9 +3,9 @@
 dockerが入っていることが前提だが、以下のコマンドで起動、終了を行う。
 - `make up`: アプリの起動
 
-- `docker-compose exec web rails db:create`: dbの作成
+- `make create_db`: dbの作成
 
-- `docker-compose exec web rails db:migrate`: dbのマイグレート
+- `make migrate_db`: dbのマイグレート
 
 - `make down`: アプリの終了
 
